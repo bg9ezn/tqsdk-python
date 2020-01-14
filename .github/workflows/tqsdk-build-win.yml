@@ -27,6 +27,8 @@ jobs:
         
     - name: Install dependencies
       run: |
+        git lfs install
+        git lfs pull      
         pip install --upgrade pip wheel setuptools pytest    
         pip install -r requirements.txt 
         pip install autodocsumm sphinx_rtd_theme jieba
